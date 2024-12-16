@@ -2,6 +2,10 @@
 
 GitHub Faker is a simple project that simulates making Git commits on a repository by generating fake commit data with random dates. This project uses Git, Moment.js, JSON file storage, and Random.js to mimic the process of creating commit histories.
 
+## Purpose
+
+The goal of this project is to create and manage fake commit histories for a Git repository. You can simulate a series of commits for testing, demonstration, or fun by generating commit dates at random intervals, pushing them to the repository, and updating a `data.json` file with the commit timestamps.
+
 ## Disclaimer
 
 This project is intended **only** for educational and entertainment purposes. It is not designed to deceive, mislead, or manipulate any systems or individuals. The creation of fake commit histories can violate the terms of service of GitHub or other platforms, and using this tool for malicious purposes is strictly prohibited.
@@ -10,9 +14,7 @@ By using this tool, you agree to abide by ethical guidelines and to use it only 
 
 **Use this tool responsibly.**
 
-## Purpose
-
-The goal of this project is to create and manage fake commit histories for a Git repository. You can simulate a series of commits for testing, demonstration, or fun by generating commit dates at random intervals, pushing them to the repository, and updating a JSON file with the commit timestamps.
+If you want to **remove the fake commits**, simply delete the repository to which the commits were made. Deleting the repository will remove all associated commit history.
 
 ## How It Works
 
@@ -22,7 +24,7 @@ The goal of this project is to create and manage fake commit histories for a Git
    - Storing this timestamp data in a `data.json` file.
 
 2. **Git Operations**: 
-   - For each generated commit, the corresponding file (data.json) is staged, committed, and pushed to the repository using `simple-git`.
+   - For each generated commit, the corresponding file (`data.json`) is staged, committed, and pushed to the repository using `simple-git`.
 
 ## Installation
 
@@ -33,4 +35,3 @@ To get started with this project, follow these steps:
 - Node.js installed on your system.
 - A GitHub repository where you want to simulate commits.
 - Access to a terminal/command line for executing commands.
-
